@@ -13,9 +13,9 @@ class MessageFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_message, container, false)
-        val nextButton = view.findViewById<Button>(R.id.next)
+        val backButton = view.findViewById<Button>(R.id.back)
 
-        nextButton.setOnClickListener{
+        backButton.setOnClickListener{
             view.findNavController().navigate(R.id.action_messageFragment_to_welcomeFragment)
         }
         return view
